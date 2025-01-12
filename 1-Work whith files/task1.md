@@ -12,13 +12,13 @@
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/5.png?raw=true)
 6) Переместить файл из одно директории в другую<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/6.png?raw=true)
-7) скопировать файл из одной директории в другую<br />
+7) Скопировать файл из одной директории в другую<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/7.png?raw=true)
-8) переименовать файл<br />
+8) Переименовать файл<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/8.png?raw=true)
-9) сравнить содержимое файла<br />
+9) Сравнить содержимое файла<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/9.png?raw=true)
-10) отсортировать содержимоей файла по возрастанию и убыванию<br />
+10) Отсортировать содержимоей файла по возрастанию и убыванию<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/10.png?raw=true)
-11) удалить все папки и файлы<br />
+11) Удалить все папки и файлы<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/1-Work%20whith%20files/screenshots/11.png?raw=true)
