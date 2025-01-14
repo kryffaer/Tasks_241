@@ -68,15 +68,9 @@ sudo passwd ssh-user
 ssh ssh-user@server_ip
 ```
 9. Ограничте ему возможность подключения к серверу<br />
-* Отредактируем файл authorized_keys пользователя:<br />
 ```sh
-sudo nano /home/ssh-user/.ssh/authorized_keys
+DenyUsers ssh-user
 ```
-* Добавим директиву, запрещающую вход:<br />
-```sh
-no-pty,no-X11-forwarding,no-agent-forwarding,no-port-forwarding,permitopen="none" ssh-rsa ...your_public_key...
-```
-* Сохраним изменения<br />
 10. Как вы это сделали?<br />
 * Изменили файл конфигурации SSH-сервера для разрешения подключения под пользователем root<br />
 * Изменили количество ошибок ввода пароля<br />
