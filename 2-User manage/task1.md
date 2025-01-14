@@ -18,7 +18,7 @@
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/2-User%20manage/screenshots/5.png?raw=true)<br />
 4) Как изменить права на файлы? Создайте файл который будет на который у всез пользователей будут все возможные права<br />
 ```sh
-chmod [options] категориядействиефлаг [file]
+chmod [options] [file]
 ```
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/2-User%20manage/screenshots/6.png?raw=true)<br />
 5) Как называется учётная запись встренного администратора в linux?<br />
