@@ -2,7 +2,8 @@
 
 1. Удалите iptables и установите firewalld<br />
 ```sh
-apt-get remove iptables -y && apt-get install firewalld -y
+apt-get remove iptables -y
+apt-get install firewalld -y
 ```
 2. Попробуйте так-же проверить возможность подключения по ssh<br />
 Мы можем подключаться по ssh, firewalld отключен<br />
