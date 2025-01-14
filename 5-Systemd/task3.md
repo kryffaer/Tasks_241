@@ -19,9 +19,4 @@ strings /var/log/journal/af4967d77fba44c6b093d0e9862f6ddd/system.journal | grep 
 ```
 Эта команда извлекает текстовые строки из журнального файла и фильтрует их по ключевому слову message247.<br />
 5. Сколько будет 2-2?<br />
-```sh
-#!/bin/bash
-ONE=2
-TWO=2
-expr $ONE + $TWO
-```
+0
