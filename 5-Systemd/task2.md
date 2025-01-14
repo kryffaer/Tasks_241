@@ -9,21 +9,15 @@ M_DIR="$HOME/folder"
 
 if [ ! -d "$M_DIR" ]; then
     mkdir "$M_DIR"
-    echo "Папка folder успешно создана!"
+    echo "Папка создана!"
 else
-    echo "Папка обнаружена |\/|"
+    echo "Папка найдена |\/|"
 fi
-
-# mkdir folder
-# touch folder/1 && date > folder/1
-# touch folder/2 && cat /proc/version > folder/2
-# touch folder/3 && hostname > folder/3
-# touch folder/4 && ls -la > folder/4
 
 for i in {1..4}; do
     if [ ! -f "$M_DIR/$i" ]; then
         touch $M_DIR/$i
-        echo "Файл $i успешно создан!"
+        echo "Файл $i создан!"
         if [ "$i" == 1 ]; then
              date > $M_DIR/1
         elif [ "$i" == 2 ]; then
@@ -46,10 +40,10 @@ After=network.target
 
 [Service]
 ExecStart=/home/systemd-script
-User=ilya
-Group=ilya
+User=ananas
+Group=ananas
 Type=oneshot
-WorkingDirectory=/home/ilya
+WorkingDirectory=/home/ananas
 
 [Install]
 WantedBy=multi-user.target
