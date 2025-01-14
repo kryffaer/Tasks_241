@@ -8,16 +8,16 @@
 ```sh
 #!/bin/bash
 set -euo pipefail
-cd ~
+cd /
 ls
 ls -la
 mkdir dir1 && mkdir dir1/dir2
-echo "Some text abc bla bla 2" > dir1/dir2/filetest
-mv dir1/dir2/filetest dir1
-cp dir1/filetest dir1/dir2
-mv dir1/filetest dir1/new_name
-diff -s dir1/new_name dir1/dir2/filetest
-sort -r dir1/new_name
+echo "text" > dir1/dir2/test.txt
+mv dir1/dir2/test.txt dir1
+cp dir1/test.txt dir1/dir2
+mv dir1/test.txt dir1/new_test.txt
+diff -s dir1/new_test.txt dir1/dir2/test.txt
+sort -r dir1/new_test.txt
 rm -r dir1
 ```
 set -euo pipefail флаги:
