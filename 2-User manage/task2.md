@@ -6,19 +6,19 @@
 2. Как вы это сделали?<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/2-User%20manage/screenshots/10.png?raw=true)<br />
 3. Какие ещё способы это сделать вы знаете?
-* Метод 1: Создание файла /etc/nologin
+* Метод 1: создание файла /etc/nologin
 ```sh
 sudo touch /etc/nologin
 ```
-* Метод 2: Изменение shell пользователя
+* Метод 2: изменение shell пользователя
 ```sh
 sudo usermod -s /sbin/nologin username
 ```
-* Метод 3: Блокировка учетной записи с помощью passwd
+* Метод 3: блокировка учетной записи с помощью passwd
 ```sh
 sudo passwd -l username
 ```
-Чтобы разблокировать учетную запись, использовать ключ -u:
+Чтобы разблокировать учетную запись:
 ```sh
 sudo passwd -u username
 ```
