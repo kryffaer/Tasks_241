@@ -25,8 +25,7 @@ firewall-cmd --reload
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/9-Firewall/screenshots/3.png?raw=true)<br />
 7. Если не получилось то откройте нужные порты<br />
 ```sh
-firewall-cmd --add-port=139/tcp --permanent
-firewall-cmd --add-port=445/tcp --permanent
+firewall-cmd --add-port=217/tcp --permanent
 ```
 8. Сделайте так чтобы изменения были постоянными<br />
 ```sh
