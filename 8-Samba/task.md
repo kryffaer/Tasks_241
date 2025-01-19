@@ -90,3 +90,5 @@ sudo systemctl restart smbd
 ```
 Результат изменения прав доступа:<br />
 ![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/13.png?raw=true)<br />
+
+![alt text](?raw=true)<br />
