@@ -2,36 +2,20 @@
 # Шарим
 
 
-1. Установите пакет samba
-```sh
-apt-get install samba
-```
+1. Установите пакет samba<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/1.png?raw=true)<br />
 2. Что такое общая папка, зачем оно может быть нужно?<br />
 Общая папка — директория, доступная для нескольких пользователей или устройств в сети. Нужна для обмена файлами между различными системами<br /> 
 3. Создайте общую папку без пароля с правами только на чтение файлов<br />
-* Создадим директории
-```sh
-sudo mkdir /media/samba/public
-```
-* Настроим прав доступа
-```sh
-sudo chmod -R 0755 /media/samba/public
-sudo chown -R nobody:nogroup /media/samba/public
-```
+* Создадим директории<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/2.png?raw=true)<br />
+* Настроим прав доступа<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/3.png?raw=true)<br />
 * Настроим файл конфигурации Samba<br />
-* Откроем файл конфигурации Samba:
-```sh
-sudo nano /etc/samba/smb.conf
-```
-* Добавим следующую секцию в конец файла:
-```sh
-[public]
-  path = /media/samba/public
-  browseable = yes
-  writable = no
-  guest ok = yes
-  read only = yes
-```
+* Откроем файл конфигурации Samba:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/4.png?raw=true)<br />
+* Добавим следующую секцию в конец файла:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/5.png?raw=true)<br />
 * Перезапустим службы Samba
 ```sh
 sudo systemctl restart smbd
@@ -55,15 +39,8 @@ sudo smbpasswd -a username
 ```sh
 sudo nano /etc/samba/smb.conf
 ```
-* Добавим следующую секцию в конец файла:
-```sh
-[private]
-  path = /media/samba/private
-  browseable = yes
-  writable = yes
-  guest ok = no
-  valid users = username
-```
+* Добавим следующую секцию в конец файла:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/8.png?raw=true)<br />
 * Перезапустим службы Samba
 ```sh
 sudo systemctl restart smbd
@@ -83,15 +60,8 @@ sudo chown -R groupname:groupname /media/samba/group_share
 ```sh
 sudo nano /etc/samba/smb.conf
 ```
-* Добавим следующую секцию в конец файла:
-```sh
-[group_share]
-  path = /media/samba/group_share
-  browseable = yes
-  writable = yes
-  guest ok = no
-  valid users = @groupname
-```
+* Добавим следующую секцию в конец файла:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/10.png?raw=true)<br />
 * Перезапустим службы Samba
 ```sh
 sudo systemctl restart smbd
@@ -112,18 +82,11 @@ sudo chown -R full_access_group:full_access_group /media/samba/multi_group_share
 ```sh
 sudo nano /etc/samba/smb.conf
 ```
-* Добавим следующую секцию в конец файла:
-```sh
-[multi_group_share]
-  path = /media/samba/multi_group_share
-  browseable = yes
-  writable = yes
-  guest ok = no
-  valid users = @full_access_group @read_only_group
-  read list = @read_only_group
-  write list = @full_access_group
-```
+* Добавим следующую секцию в конец файла:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/12.png?raw=true)<br />
 * Перезапустим службы Samba
 ```sh
 sudo systemctl restart smbd
 ```
+Результат изменения прав доступа:<br />
+![alt text](https://github.com/kryffaer/Tasks_241/blob/my_reply/8-Samba/screenshots/13.png?raw=true)<br />
